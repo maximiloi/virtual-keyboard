@@ -134,4 +134,6 @@ package.json
 package-lock.json
 
 # # es-lint 
-# .eslintrc.js
+.eslintrc.js
+
+js/module/keyboard.js
