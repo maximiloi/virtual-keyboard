@@ -133,7 +133,8 @@ dist
 package.json
 package-lock.json
 
-# # es-lint 
+# es-lint 
 .eslintrc.js
 
-js/module/keyboard.js
+# git
+.gitignore
