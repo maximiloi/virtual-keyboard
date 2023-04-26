@@ -519,3 +519,9 @@ const row5 = [{
     caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
   },
 }];
+
+export { row1 };
+export { row2 };
+export { row3 };
+export { row4 };
+export { row5 };
