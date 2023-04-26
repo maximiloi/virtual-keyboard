@@ -13,11 +13,8 @@ const keyboardWrapper = createElement('div', 'app__keyboard keyboard');
 const textDescription = createElement('p', 'app__text', 'Клавиатура создана в операционной системе OsX');
 const textLanguage = createElement('p', 'app__text', 'Для переключения языка комбинация: левыe cmd + space');
 
-keyboardWrapper.append(createKeyboardKey(row1));
-keyboardWrapper.append(createKeyboardKey(row2));
-keyboardWrapper.append(createKeyboardKey(row3));
-keyboardWrapper.append(createKeyboardKey(row4));
-keyboardWrapper.append(createKeyboardKey(row5));
+const rows = [row1, row2, row3, row4, row5];
+keyboardWrapper.append(...rows.map((row) => createKeyboardKey(row)));
 
 appWrapper.append(
   titleElement,
