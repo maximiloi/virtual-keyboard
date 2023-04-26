@@ -11,7 +11,7 @@ function createElement(tagName, className, textContent, onClickHandler) {
     element.classList.add(name);
   });
   if (textContent) {
-    element.textContent = textContent.toString();
+    element.innerHTML = textContent.toString();
   }
   if (onClickHandler) {
     element.addEventListener('click', onClickHandler);

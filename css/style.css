@@ -62,3 +62,33 @@
 .hidden {
   display: none;
 }
+
+.Tab,
+.Enter,
+.ShiftLeft,
+.ShiftRight,
+.Space {
+  flex-grow: 1;
+}
+
+.ArrowUp,
+.ArrowLeft,
+.ArrowRight,
+.ArrowDown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* font-size: 30px; */
+}
+
+.ArrowUp {
+  transform: rotate(-90deg);
+}
+
+.ArrowLeft {
+  transform: rotate(-180deg);
+}
+
+.ArrowDown {
+  transform: rotate(-270deg);
+}
