@@ -1,5 +1,12 @@
 import { createElement } from './create-element.js';
 
+/**
+ * Description placeholder
+ * @date 26.04.2023 - 23:54:42
+ *
+ * @param {Object} keyObject
+ * @returns {HTMLElement}
+ */
 function createKeyboardKey(keyObject) {
   const row = createElement('div', 'keyboard__row row');
   keyObject.forEach((item) => {
