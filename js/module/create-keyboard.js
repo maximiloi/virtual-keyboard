@@ -11,8 +11,8 @@ function createKeyboardKey(keyObject) {
   const row = createElement('div', 'keyboard__row row');
   keyObject.forEach((item) => {
     const { keyName, eng, rus } = item;
-    const keyWrapper = createElement('div', `key ${keyName}`);
-
+    const keyWrapper = createElement('button', `key ${keyName}`);
+    keyWrapper.setAttribute('data-ripple', 'once');
     const spanEng = createElement('span', 'eng');
     const engCaseDown = createElement('span', 'caseDown', `${eng.caseDown}`);
     const engCaseUp = createElement('span', 'caseUp hidden', `${eng.caseUp}`);

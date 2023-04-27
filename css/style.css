@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono&display=swap');
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+}
+
 .app {
   display: flex;
   justify-content: center;
@@ -21,16 +27,14 @@
 .app__keyboard {
   margin: 1em 0 1em;
   padding: 5px 5px 0 5px;
-  /* padding-left: 0;
-  padding-bottom: 0; */
-  background: #888888;
-  border: 3px solid #222222;
+  background: #95B0B2;
+  border: 3px solid #003135;
   border-radius: 5px;
 }
 
 .app__out {
   display: block;
-  width: calc(700px - 22px);
+  width: calc(100% - 22px);
   height: calc(200px - 22px);
   padding: 10px;
   font-size: 18px;
@@ -52,11 +56,41 @@
 }
 
 .key {
-  min-width: 26px;
-  min-height: 26px;
+  position: relative;
+  min-width: 40px;
+  min-height: 40px;
   padding: 6px;
-  border: 1px solid black;
   border-radius: 5px;
+  /* border-style: none; */
+  overflow: hidden;
+
+  background-color: #438E79;
+  transition: background-color 0.3s ease 0s;
+}
+
+.key:hover {
+  background-color: #70B0B3;
+}
+
+.button__ripple {
+  position: absolute;
+  border-radius: 50%;
+
+  background-color: rgba(255, 255, 255, 0.4);
+  border: 2px solid rgba(255, 255, 255, 0.5);
+
+  animation: ripple 1s ease forwards;
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(0);
+  }
+
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
 }
 
 .hidden {
@@ -66,9 +100,12 @@
 .Tab,
 .Enter,
 .ShiftLeft,
-.ShiftRight,
 .Space {
   flex-grow: 1;
+}
+
+.ShiftRight {
+  width: 90px;
 }
 
 .ArrowUp,

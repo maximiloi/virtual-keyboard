@@ -487,14 +487,6 @@ const row5 = [{
     caseDown: 'Cmd', caseUp: 'Cmd', caps: 'Cmd', shiftCaps: 'Cmd',
   },
 }, {
-  keyName: 'AltRight',
-  eng: {
-    caseDown: 'Alt', caseUp: 'Alt', caps: 'Alt', shiftCaps: 'Alt',
-  },
-  rus: {
-    caseDown: 'Alt', caseUp: 'Alt', caps: 'Alt', shiftCaps: 'Alt',
-  },
-}, {
   keyName: 'ArrowLeft',
   eng: {
     caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
@@ -517,6 +509,14 @@ const row5 = [{
   },
   rus: {
     caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+  },
+}, {
+  keyName: 'AltRight',
+  eng: {
+    caseDown: 'Alt', caseUp: 'Alt', caps: 'Alt', shiftCaps: 'Alt',
+  },
+  rus: {
+    caseDown: 'Alt', caseUp: 'Alt', caps: 'Alt', shiftCaps: 'Alt',
   },
 }];
 
