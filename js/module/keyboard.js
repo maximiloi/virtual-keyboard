@@ -224,15 +224,7 @@ const row2 = [{
   rus: {
     caseDown: '\\\\', caseUp: '/', caps: '/', shiftCaps: '\\\\',
   },
-}, {
-  keyName: 'Delete',
-  eng: {
-    caseDown: 'Del', caseUp: 'Del', caps: 'Del', shiftCaps: 'Del',
-  },
-  rus: {
-    caseDown: 'Del', caseUp: 'Del', caps: 'Del', shiftCaps: 'Del',
-  },
-}];
+},];
 
 const row3 = [{
   keyName: 'CapsLock',

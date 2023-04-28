@@ -22,4 +22,4 @@ function createElement(tagName, className, textContent, onClickHandler) {
   return element;
 }
 
-export { createElement };
+export default createElement;

@@ -59,13 +59,14 @@ body {
   position: relative;
   min-width: 40px;
   min-height: 40px;
-  padding: 6px;
   border-radius: 5px;
-  /* border-style: none; */
+  border-style: none;
   overflow: hidden;
 
   background-color: #438E79;
   transition: background-color 0.3s ease 0s;
+
+  cursor: pointer;
 }
 
 .key:hover {
@@ -79,7 +80,7 @@ body {
   background-color: rgba(255, 255, 255, 0.4);
   border: 2px solid rgba(255, 255, 255, 0.5);
 
-  animation: ripple 1s ease forwards;
+  animation: ripple .5s ease forwards;
 }
 
 @keyframes ripple {
@@ -93,7 +94,14 @@ body {
   }
 }
 
-.hidden {
+._active {
+  padding: 6px;
+  display: block;
+  width: calc(100% - 12px);
+  height: calc(100% - 12px);
+}
+
+._hidden {
   display: none;
 }
 
@@ -105,7 +113,7 @@ body {
 }
 
 .ShiftRight {
-  width: 90px;
+  width: 85px;
 }
 
 .ArrowUp,
@@ -115,7 +123,6 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  /* font-size: 30px; */
 }
 
 .ArrowUp {

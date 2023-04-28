@@ -1,4 +1,4 @@
-import { createElement } from './create-element.js';
+import createElement from './create-element.js';
 
 /**
  * Description placeholder
@@ -43,4 +43,4 @@ function hoverRipple(targetItem, e) {
   }, timeOut);
 }
 
-export { hoverRipple };
+export default hoverRipple;
