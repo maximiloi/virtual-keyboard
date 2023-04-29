@@ -6,6 +6,7 @@ import {
 import hoverRipple from './module/button-hover-ripple.js';
 
 const app = document.querySelector('.app');
+// Создание элементов проекта на странице
 const appWrapper = createElement('section', 'app__wrapper');
 const titleElement = createElement('h1', 'app__title', 'RSS Virtual Keyboard');
 const textareaOut = createElement('textarea', 'app__out');
