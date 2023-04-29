@@ -219,12 +219,12 @@ const row2 = [{
 }, {
   keyName: 'Backslash',
   eng: {
-    caseDown: '\\\\', caseUp: '|', caps: '|', shiftCaps: '\\\\',
+    caseDown: '\\', caseUp: '|', caps: '|', shiftCaps: '\\',
   },
   rus: {
-    caseDown: '\\\\', caseUp: '/', caps: '/', shiftCaps: '\\\\',
+    caseDown: '\\', caseUp: '/', caps: '/', shiftCaps: '\\',
   },
-},];
+}];
 
 const row3 = [{
   keyName: 'CapsLock',

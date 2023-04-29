@@ -4,6 +4,7 @@ import {
   row1, row2, row3, row4, row5,
 } from './module/keyboard.js';
 import hoverRipple from './module/button-hover-ripple.js';
+import toggleCapslock from './module/toggle-capslock.js';
 
 const app = document.querySelector('.app');
 // Создание элементов проекта на странице
@@ -44,7 +45,7 @@ document.addEventListener('click', (e) => {
     if (targetItem.closest('._active').textContent.toLowerCase() === 'shift') {
       textAreaValue.value += '----';
     } else if (targetItem.closest('._active').textContent.toLowerCase() === 'capslock') {
-      textAreaValue.value += '====';
+      toggleCapslock(targetItem);
     } else if (targetItem.closest('._active').textContent.toLowerCase() === 'tab') {
       textAreaValue.value += '    ';
     } else if (targetItem.closest('._active').textContent.toLowerCase() === 'enter') {
