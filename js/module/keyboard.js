@@ -203,7 +203,7 @@ const row2 = [{
 }, {
   keyName: 'BracketLeft',
   eng: {
-    caseDown: '[', caseUp: '{', caps: '{', shiftCaps: '[',
+    caseDown: '[', caseUp: '{', caps: '[', shiftCaps: '{',
   },
   rus: {
     caseDown: 'х', caseUp: 'Х', caps: 'Х', shiftCaps: 'х',
@@ -211,7 +211,7 @@ const row2 = [{
 }, {
   keyName: 'BracketRight',
   eng: {
-    caseDown: ']', caseUp: '}', caps: '}', shiftCaps: ']',
+    caseDown: ']', caseUp: '}', caps: ']', shiftCaps: '}',
   },
   rus: {
     caseDown: 'ъ', caseUp: 'Ъ', caps: 'Ъ', shiftCaps: 'ъ',
@@ -219,10 +219,10 @@ const row2 = [{
 }, {
   keyName: 'Backslash',
   eng: {
-    caseDown: '\\', caseUp: '|', caps: '|', shiftCaps: '\\',
+    caseDown: '\\', caseUp: '|', caps: '\\', shiftCaps: '|',
   },
   rus: {
-    caseDown: '\\', caseUp: '/', caps: '/', shiftCaps: '\\',
+    caseDown: '\\', caseUp: '/', caps: '\\', shiftCaps: '|',
   },
 }];
 
@@ -309,7 +309,7 @@ const row3 = [{
 }, {
   keyName: 'Semicolon',
   eng: {
-    caseDown: ';', caseUp: ':', caps: ':', shiftCaps: ';',
+    caseDown: ';', caseUp: ':', caps: ';', shiftCaps: ':',
   },
   rus: {
     caseDown: 'ж', caseUp: 'Ж', caps: 'Ж', shiftCaps: 'ж',
@@ -317,7 +317,7 @@ const row3 = [{
 }, {
   keyName: 'Quote',
   eng: {
-    caseDown: '\'', caseUp: '"', caps: '"', shiftCaps: '\'',
+    caseDown: '\'', caseUp: '"', caps: '\'', shiftCaps: '"',
   },
   rus: {
     caseDown: 'э', caseUp: 'Э', caps: 'Э', shiftCaps: 'э',
@@ -399,7 +399,7 @@ const row4 = [{
 }, {
   keyName: 'Comma',
   eng: {
-    caseDown: ',', caseUp: '<', caps: '<', shiftCaps: ',',
+    caseDown: ',', caseUp: '<', caps: ',', shiftCaps: '<',
   },
   rus: {
     caseDown: 'б', caseUp: 'Б', caps: 'Б', shiftCaps: 'б',
@@ -407,7 +407,7 @@ const row4 = [{
 }, {
   keyName: 'Period',
   eng: {
-    caseDown: '.', caseUp: '>', caps: '>', shiftCaps: '.',
+    caseDown: '.', caseUp: '>', caps: '.', shiftCaps: '>',
   },
   rus: {
     caseDown: 'ю', caseUp: 'Ю', caps: 'Ю', shiftCaps: 'ю',
@@ -415,7 +415,7 @@ const row4 = [{
 }, {
   keyName: 'Slash',
   eng: {
-    caseDown: '/', caseUp: '?', caps: '?', shiftCaps: '/',
+    caseDown: '/', caseUp: '?', caps: '/', shiftCaps: '?',
   },
   rus: {
     caseDown: '.', caseUp: ',', caps: ',', shiftCaps: '.',
