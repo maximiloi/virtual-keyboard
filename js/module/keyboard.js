@@ -423,10 +423,10 @@ const row4 = [{
 }, {
   keyName: 'ArrowUp',
   eng: {
-    caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+    caseDown: '&#8593;', caseUp: '&#8593;', caps: '&#8593;', shiftCaps: '&#8593;',
   },
   rus: {
-    caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+    caseDown: '&#8593;', caseUp: '&#8593;', caps: '&#8593;', shiftCaps: '&#8593;',
   },
 }, {
   keyName: 'ShiftRight',
@@ -481,26 +481,26 @@ const row5 = [{
 }, {
   keyName: 'ArrowLeft',
   eng: {
-    caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+    caseDown: '&#8592;', caseUp: '&#8592;', caps: '&#8592;', shiftCaps: '&#8592;',
   },
   rus: {
-    caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+    caseDown: '&#8592;', caseUp: '&#8592;', caps: '&#8592;', shiftCaps: '&#8592;',
   },
 }, {
   keyName: 'ArrowDown',
   eng: {
-    caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+    caseDown: '&#8595;', caseUp: '&#8595;', caps: '&#8595;', shiftCaps: '&#8595;',
   },
   rus: {
-    caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+    caseDown: '&#8595;', caseUp: '&#8595;', caps: '&#8595;', shiftCaps: '&#8595;',
   },
 }, {
   keyName: 'ArrowRight',
   eng: {
-    caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+    caseDown: '&#8594;', caseUp: '&#8594;', caps: '&#8594;', shiftCaps: '&#8594;',
   },
   rus: {
-    caseDown: '&#8227;', caseUp: '&#8227;', caps: '&#8227;', shiftCaps: '&#8227;',
+    caseDown: '&#8594;', caseUp: '&#8594;', caps: '&#8594;', shiftCaps: '&#8594;',
   },
 }, {
   keyName: 'AltRight',

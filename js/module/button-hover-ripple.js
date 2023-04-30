@@ -38,7 +38,6 @@ function hoverRipple(targetItem, e) {
   const timeOut = getAnimationDuration(ripple);
 
   setTimeout(() => {
-    if (!ripple) return;
     ripple.remove();
   }, timeOut);
 }

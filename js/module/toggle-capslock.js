@@ -1,4 +1,4 @@
-function toggleCapslock(targetItem) {
+const toggleCapslock = (targetItem) => {
   const kitActiveElement = document.querySelectorAll('._active');
   kitActiveElement.forEach((item) => {
     item.classList.remove('_active');
