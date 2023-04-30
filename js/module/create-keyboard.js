@@ -7,7 +7,7 @@ import createElement from './create-element.js';
  * @param {Object} keyObject
  * @returns {HTMLElement}
  */
-function createKeyboardKey(keyObject) {
+const createKeyboardKey = (keyObject) => {
   const row = createElement('div', 'keyboard__row row');
 
   keyObject.forEach((item) => {
@@ -34,6 +34,6 @@ function createKeyboardKey(keyObject) {
   });
 
   return row;
-}
+};
 
 export default createKeyboardKey;

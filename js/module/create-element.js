@@ -8,7 +8,7 @@
  * @param {Function} onClickHandler
  * @returns {HTMLElement}
  */
-function createElement(tagName, className, textContent, onClickHandler) {
+const createElement = (tagName, className, textContent, onClickHandler) => {
   const element = document.createElement(tagName);
   className.split(' ').forEach((/** @type {string} */ name) => {
     element.classList.add(name);
@@ -20,6 +20,6 @@ function createElement(tagName, className, textContent, onClickHandler) {
     element.addEventListener('click', onClickHandler);
   }
   return element;
-}
+};
 
 export default createElement;

@@ -3,15 +3,17 @@ import createKeyboardKey from './module/create-keyboard.js';
 import {
   row1, row2, row3, row4, row5,
 } from './module/keyboard.js';
-import hoverRipple from './module/button-hover-ripple.js';
+// import hoverRipple from './module/button-hover-ripple.js';
 import toggleCapslock from './module/toggle-capslock.js';
 import toggleShift from './module/toggle-shift.js';
+import keyHover from './module/keydown-hover.js';
 
 const app = document.querySelector('.app');
 // Создание элементов проекта на странице
 const appWrapper = createElement('section', 'app__wrapper');
 const titleElement = createElement('h1', 'app__title', 'RSS Virtual Keyboard');
 const textareaOut = createElement('textarea', 'app__out');
+textareaOut.setAttribute('autofocus', '');
 const keyboardWrapper = createElement('div', 'app__keyboard keyboard');
 const textDescription = createElement('p', 'app__text', 'Keyboard created in operating system macOs');
 const textLanguage = createElement('p', 'app__text', 'To switch the language combination: left cmd + space');
@@ -63,10 +65,16 @@ document.addEventListener('mouseup', (e) => {
   const targetItem = e.target;
 
   if (targetItem.closest('.key')) {
-    if (!targetItem.closest('._active').textContent.toLowerCase() === 'shift') return;
-
     if (targetItem.closest('._active').textContent.toLowerCase() === 'shift') {
       toggleShift(targetItem);
     }
   }
+});
+
+document.addEventListener('keydown', (e) => {
+  keyHover(e);
+});
+
+document.addEventListener('keyup', (e) => {
+  keyHover(e);
 });

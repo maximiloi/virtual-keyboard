@@ -7,7 +7,7 @@ import createElement from './create-element.js';
  * @param {element} targetItem
  * @param {event} e
  */
-function hoverRipple(targetItem, e) {
+const hoverRipple = (targetItem, e) => {
   // Создание span элемента
   const button = targetItem.closest('[data-ripple]');
   const ripple = createElement('span', 'button__ripple');
@@ -40,6 +40,6 @@ function hoverRipple(targetItem, e) {
   setTimeout(() => {
     ripple.remove();
   }, timeOut);
-}
+};
 
 export default hoverRipple;

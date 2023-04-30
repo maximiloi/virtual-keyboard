@@ -1,5 +1,5 @@
 const row1 = [{
-  keyName: 'backquote',
+  keyName: 'Backquote',
   eng: {
     caseDown: '`', caseUp: '~', caps: '`', shiftCaps: '~',
   },
@@ -7,7 +7,7 @@ const row1 = [{
     caseDown: 'ё', caseUp: 'Ё', caps: 'Ё', shiftCaps: 'ё',
   },
 }, {
-  keyName: 'digit1',
+  keyName: 'Digit1',
   eng: {
     caseDown: '1', caseUp: '!', caps: '1', shiftCaps: '!',
   },
@@ -15,7 +15,7 @@ const row1 = [{
     caseDown: '1', caseUp: '!', caps: '1', shiftCaps: '!',
   },
 }, {
-  keyName: 'digit2',
+  keyName: 'Digit2',
   eng: {
     caseDown: '2', caseUp: '@', caps: '2', shiftCaps: '@',
   },
@@ -23,7 +23,7 @@ const row1 = [{
     caseDown: '2', caseUp: '"', caps: '2', shiftCaps: '"',
   },
 }, {
-  keyName: 'digit3',
+  keyName: 'Digit3',
   eng: {
     caseDown: '3', caseUp: '#', caps: '3', shiftCaps: '#',
   },
@@ -31,7 +31,7 @@ const row1 = [{
     caseDown: '3', caseUp: '№', caps: '3', shiftCaps: '№',
   },
 }, {
-  keyName: 'digit4',
+  keyName: 'Digit4',
   eng: {
     caseDown: '4', caseUp: '$', caps: '4', shiftCaps: '$',
   },
@@ -39,7 +39,7 @@ const row1 = [{
     caseDown: '4', caseUp: ';', caps: '4', shiftCaps: ';',
   },
 }, {
-  keyName: 'digit5',
+  keyName: 'Digit5',
   eng: {
     caseDown: '5', caseUp: '%', caps: '5', shiftCaps: '%',
   },
@@ -47,7 +47,7 @@ const row1 = [{
     caseDown: '5', caseUp: '%', caps: '5', shiftCaps: '%',
   },
 }, {
-  keyName: 'digit6',
+  keyName: 'Digit6',
   eng: {
     caseDown: '6', caseUp: '^', caps: '6', shiftCaps: '^',
   },
@@ -55,7 +55,7 @@ const row1 = [{
     caseDown: '6', caseUp: ':', caps: '6', shiftCaps: ':',
   },
 }, {
-  keyName: 'digit7',
+  keyName: 'Digit7',
   eng: {
     caseDown: '7', caseUp: '&', caps: '7', shiftCaps: '&',
   },
@@ -63,7 +63,7 @@ const row1 = [{
     caseDown: '7', caseUp: '?', caps: '7', shiftCaps: '?',
   },
 }, {
-  keyName: 'digit8',
+  keyName: 'Digit8',
   eng: {
     caseDown: '8', caseUp: '*', caps: '8', shiftCaps: '*',
   },
@@ -71,7 +71,7 @@ const row1 = [{
     caseDown: '8', caseUp: '*', caps: '8', shiftCaps: '*',
   },
 }, {
-  keyName: 'digit9',
+  keyName: 'Digit9',
   eng: {
     caseDown: '9', caseUp: '(', caps: '9', shiftCaps: '(',
   },
@@ -79,7 +79,7 @@ const row1 = [{
     caseDown: '9', caseUp: '(', caps: '9', shiftCaps: '(',
   },
 }, {
-  keyName: 'digit0',
+  keyName: 'Digit0',
   eng: {
     caseDown: '0', caseUp: ')', caps: '0', shiftCaps: ')',
   },
@@ -87,7 +87,7 @@ const row1 = [{
     caseDown: '0', caseUp: ')', caps: '0', shiftCaps: ')',
   },
 }, {
-  keyName: 'minus',
+  keyName: 'Minus',
   eng: {
     caseDown: '-', caseUp: '_', caps: '-', shiftCaps: '_',
   },
@@ -95,7 +95,7 @@ const row1 = [{
     caseDown: '-', caseUp: '_', caps: '-', shiftCaps: '_',
   },
 }, {
-  keyName: 'equal',
+  keyName: 'Equal',
   eng: {
     caseDown: '=', caseUp: '+', caps: '=', shiftCaps: '+',
   },
@@ -103,7 +103,7 @@ const row1 = [{
     caseDown: '=', caseUp: '+', caps: '=', shiftCaps: '+',
   },
 }, {
-  keyName: 'backspace',
+  keyName: 'Backspace',
   eng: {
     caseDown: 'Backspace', caseUp: 'Backspace', caps: 'Backspace', shiftCaps: 'Backspace',
   },
