@@ -1,3 +1,9 @@
+/**
+ * Description placeholder
+ * @date 01.05.2023 - 09:42:40
+ *
+ * @param {element} targetItem
+ */
 const toggleCapslock = (targetItem) => {
   const kitActiveElement = document.querySelectorAll('._active');
   kitActiveElement.forEach((item) => {

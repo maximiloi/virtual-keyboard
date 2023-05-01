@@ -3,10 +3,9 @@ import createKeyboardKey from './module/create-keyboard.js';
 import {
   row1, row2, row3, row4, row5,
 } from './module/keyboard.js';
-// import hoverRipple from './module/button-hover-ripple.js';
 import toggleCapslock from './module/toggle-capslock.js';
 import toggleShift from './module/toggle-shift.js';
-import keyHover from './module/keydown-hover.js';
+import hoverKeydown from './module/hover-keydown.js';
 
 const app = document.querySelector('.app');
 // Создание элементов проекта на странице
@@ -33,10 +32,7 @@ app.prepend(appWrapper);
 
 document.addEventListener('mousedown', (e) => {
   const targetItem = e.target;
-  // Добавление эффекта нажатия на клавиатуру
-  // if (targetItem.closest('[data-ripple]')) {
-  //   hoverRipple(targetItem, e);
-  // }
+
   // Добавление текста кликом по клавиатуре
   if (targetItem.closest('.key')) {
     const textAreaOut = document.querySelector('.app__out');
@@ -72,9 +68,9 @@ document.addEventListener('mouseup', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
-  keyHover(e);
+  hoverKeydown(e);
 });
 
 document.addEventListener('keyup', (e) => {
-  keyHover(e);
+  hoverKeydown(e);
 });

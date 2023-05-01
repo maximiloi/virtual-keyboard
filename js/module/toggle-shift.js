@@ -1,3 +1,9 @@
+/**
+ * Description placeholder
+ * @date 01.05.2023 - 09:41:03
+ *
+ * @param {element} targetItem
+ */
 const toggleShift = (targetItem) => {
   const kitActiveElement = document.querySelectorAll('._active');
   kitActiveElement.forEach((item) => {

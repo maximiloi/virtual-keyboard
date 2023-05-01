@@ -75,6 +75,10 @@ body {
   background-color: #70B0B3;
 }
 
+._on {
+  border-radius: 10px;
+}
+
 ._active {
   padding: 10px;
   display: block;
