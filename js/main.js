@@ -39,19 +39,19 @@ document.addEventListener('mousedown', (e) => {
   if (targetItem.closest('.key')) {
     const textAreaOut = document.querySelector('.app__out');
 
-    if (targetItem.closest('._active').textContent.toLowerCase() === 'ctrl'
-    || targetItem.closest('._active').textContent.toLowerCase() === 'alt'
-    || targetItem.closest('._active').textContent.toLowerCase() === 'cmd') return;
+    if (targetItem.closest('._active').textContent === 'Ctrl'
+    || targetItem.closest('._active').textContent === 'Alt'
+    || targetItem.closest('._active').textContent === 'Cmd') return;
 
-    if (targetItem.closest('._active').textContent.toLowerCase() === 'shift') {
+    if (targetItem.closest('._active').textContent === 'Shift') {
       toggleShift(targetItem);
-    } else if (targetItem.closest('._active').textContent.toLowerCase() === 'capslock') {
+    } else if (targetItem.closest('._active').textContent === 'CapsLock') {
       toggleCapslock(targetItem);
-    } else if (targetItem.closest('._active').textContent.toLowerCase() === 'tab') {
+    } else if (targetItem.closest('._active').textContent === 'Tab') {
       textAreaOut.value += '\t';
-    } else if (targetItem.closest('._active').textContent.toLowerCase() === 'enter') {
+    } else if (targetItem.closest('._active').textContent === 'Enter') {
       textAreaOut.value += '\n';
-    } else if (targetItem.closest('._active').textContent.toLowerCase() === 'backspace') {
+    } else if (targetItem.closest('._active').textContent === 'Backspace') {
       textAreaOut.value = textAreaOut.value.substring(0, textAreaOut.value.length - 1);
     } else {
       textAreaOut.value += targetItem.closest('._active').textContent;
@@ -61,20 +61,20 @@ document.addEventListener('mousedown', (e) => {
 
 document.addEventListener('mouseup', (e) => {
   const targetItem = e.target;
-
+  if (targetItem.textContent === 'CapsLock') return;
+  toggleShift(targetItem);
   hoverClick(targetItem, 'mouseup');
-  // Отключение вывода клавиатуры шифт
-  if (targetItem.closest('.key')) {
-    if (targetItem.closest('._active').textContent.toLowerCase() === 'shift') {
-      toggleShift(targetItem);
-    }
-  }
 });
 
 document.addEventListener('keydown', (e) => {
+  if (e.targetItem.textContent === 'Tab') {
+    e.defaultPrevented();
+  }
+  
   hoverKeydown(e, 'keydown');
 });
 
 document.addEventListener('keyup', (e) => {
+  if (e.key === 'CapsLock') return;
   hoverKeydown(e, 'keyup');
 });
