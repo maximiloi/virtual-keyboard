@@ -61,8 +61,13 @@ document.addEventListener('mousedown', (e) => {
 
 document.addEventListener('mouseup', (e) => {
   const targetItem = e.target;
-  if (targetItem.textContent === 'CapsLock') return;
-  toggleShift(targetItem);
+  if (targetItem.textContent === 'Shift') {
+    toggleShift(targetItem);
+  } else if (targetItem.textContent === 'CapsLock') {
+    return;
+  } else {
+    return;
+  }
   hoverClick(targetItem, 'mouseup');
 });
 
@@ -70,7 +75,6 @@ document.addEventListener('keydown', (e) => {
   if (e.targetItem.textContent === 'Tab') {
     e.defaultPrevented();
   }
-  
   hoverKeydown(e, 'keydown');
 });
 
