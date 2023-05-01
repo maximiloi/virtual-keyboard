@@ -70,13 +70,17 @@ body {
   cursor: pointer;
 }
 
-.key:hover,
-._on {
+.key:hover {
   background-color: #70B0B3;
 }
 
+/* ._on:hover {
+  background-color: #438E79;
+} */
+
 ._on {
-  border-radius: 10px;
+  background-color: #438E79;
+  border-radius: 15px;
 }
 
 ._active {

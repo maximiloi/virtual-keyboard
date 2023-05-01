@@ -6,6 +6,7 @@ import {
 import toggleCapslock from './module/toggle-capslock.js';
 import toggleShift from './module/toggle-shift.js';
 import hoverKeydown from './module/hover-keydown.js';
+import hoverClick from './module/hover-click.js';
 
 const app = document.querySelector('.app');
 // Создание элементов проекта на странице
@@ -33,6 +34,7 @@ app.prepend(appWrapper);
 document.addEventListener('mousedown', (e) => {
   const targetItem = e.target;
 
+  // hoverClick(targetItem, 'mousedown');
   // Добавление текста кликом по клавиатуре
   if (targetItem.closest('.key')) {
     const textAreaOut = document.querySelector('.app__out');
@@ -46,7 +48,7 @@ document.addEventListener('mousedown', (e) => {
     } else if (targetItem.closest('._active').textContent.toLowerCase() === 'capslock') {
       toggleCapslock(targetItem);
     } else if (targetItem.closest('._active').textContent.toLowerCase() === 'tab') {
-      textAreaOut.value += '    ';
+      textAreaOut.value += '\t';
     } else if (targetItem.closest('._active').textContent.toLowerCase() === 'enter') {
       textAreaOut.value += '\n';
     } else if (targetItem.closest('._active').textContent.toLowerCase() === 'backspace') {
@@ -60,6 +62,8 @@ document.addEventListener('mousedown', (e) => {
 document.addEventListener('mouseup', (e) => {
   const targetItem = e.target;
 
+  hoverClick(targetItem, 'mouseup');
+  // Отключение вывода клавиатуры шифт
   if (targetItem.closest('.key')) {
     if (targetItem.closest('._active').textContent.toLowerCase() === 'shift') {
       toggleShift(targetItem);
@@ -68,9 +72,9 @@ document.addEventListener('mouseup', (e) => {
 });
 
 document.addEventListener('keydown', (e) => {
-  hoverKeydown(e);
+  hoverKeydown(e, 'keydown');
 });
 
 document.addEventListener('keyup', (e) => {
-  hoverKeydown(e);
+  hoverKeydown(e, 'keyup');
 });

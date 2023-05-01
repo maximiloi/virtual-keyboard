@@ -4,7 +4,7 @@
  *
  * @param {event} e
  */
-const hoverKeydown = (e) => {
+const hoverKeydown = (e, event) => {
   const targetCode = e.code;
 
   document.querySelector('.app__out').focus();
@@ -12,7 +12,11 @@ const hoverKeydown = (e) => {
   const kitKey = document.querySelectorAll('.key');
   kitKey.forEach((key) => {
     if (key.closest(`.${targetCode}`)) {
-      key.classList.toggle('_on');
+      if (event === 'keydown') {
+        key.classList.add('_on');
+      } else {
+        key.classList.remove('_on');
+      }
     }
   });
 };
