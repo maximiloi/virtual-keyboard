@@ -78,7 +78,8 @@ body {
   background-color: #438E79;
 } */
 
-._on {
+._on,
+._hover {
   background-color: #438E79;
   border-radius: 15px;
 }
