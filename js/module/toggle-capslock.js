@@ -19,6 +19,6 @@ const toggleCapslock = (targetItem) => {
     }
   });
   targetItem.parentElement.parentElement.classList.toggle('_on');
-}
+};
 
 export default toggleCapslock;

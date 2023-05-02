@@ -7,6 +7,7 @@ import toggleCapslock from './module/toggle-capslock.js';
 import toggleShift from './module/toggle-shift.js';
 import hoverKeydown from './module/hover-keydown.js';
 import hoverClick from './module/hover-click.js';
+import languageChange from './module/language-change.js';
 
 const app = document.querySelector('.app');
 // Создание элементов проекта на странице
@@ -16,7 +17,7 @@ const textareaOut = createElement('textarea', 'app__out');
 textareaOut.setAttribute('autofocus', '');
 const keyboardWrapper = createElement('div', 'app__keyboard keyboard');
 const textDescription = createElement('p', 'app__text', 'Keyboard created in operating system macOs');
-const textLanguage = createElement('p', 'app__text', 'To switch the language combination: left cmd + space');
+const textLanguage = createElement('p', 'app__text', 'To switch the language combination: Shift + Ctrl');
 
 const rows = [row1, row2, row3, row4, row5];
 keyboardWrapper.append(...rows.map((row) => createKeyboardKey(row)));
@@ -34,7 +35,6 @@ app.prepend(appWrapper);
 document.addEventListener('mousedown', (e) => {
   const targetItem = e.target;
 
-  // hoverClick(targetItem, 'mousedown');
   // Добавление текста кликом по клавиатуре
   if (targetItem.closest('.key')) {
     const textAreaOut = document.querySelector('.app__out');
@@ -56,29 +56,38 @@ document.addEventListener('mousedown', (e) => {
     } else {
       textAreaOut.value += targetItem.closest('._active').textContent;
     }
+
+    hoverClick(targetItem, 'mousedown');
   }
 });
 
 document.addEventListener('mouseup', (e) => {
   const targetItem = e.target;
+  hoverClick(targetItem, 'mouseup');
+
   if (targetItem.textContent === 'Shift') {
     toggleShift(targetItem);
-  } else if (targetItem.textContent === 'CapsLock') {
-    return;
-  } else {
-    return;
   }
-  hoverClick(targetItem, 'mouseup');
 });
 
 document.addEventListener('keydown', (e) => {
-  if (e.targetItem.textContent === 'Tab') {
-    e.defaultPrevented();
+  const targetCode = e.code;
+
+  if (e.shiftKey && e.ctrlKey) {
+    languageChange();
   }
-  hoverKeydown(e, 'keydown');
+
+  if (targetCode === 'Tab') {
+    e.preventDefault();
+    document.querySelector('.app__out').value += '\t';
+  } else if (targetCode === 'CapsLock') {
+    toggleCapslock(e.target);
+  } else {
+    hoverKeydown(targetCode, 'keydown');
+  }
 });
 
 document.addEventListener('keyup', (e) => {
-  if (e.key === 'CapsLock') return;
-  hoverKeydown(e, 'keyup');
+  const targetCode = e.code;
+  hoverKeydown(targetCode, 'keyup');
 });

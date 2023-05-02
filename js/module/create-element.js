@@ -8,16 +8,13 @@
  * @param {Function} onClickHandler
  * @returns {HTMLElement}
  */
-const createElement = (tagName, className, textContent, onClickHandler) => {
+const createElement = (tagName, className, textContent) => {
   const element = document.createElement(tagName);
   className.split(' ').forEach((/** @type {string} */ name) => {
     element.classList.add(name);
   });
   if (textContent) {
     element.innerHTML = textContent.toString();
-  }
-  if (onClickHandler) {
-    element.addEventListener('click', onClickHandler);
   }
   return element;
 };

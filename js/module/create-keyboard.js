@@ -15,7 +15,7 @@ const createKeyboardKey = (keyObject) => {
     const keyWrapper = createElement('div', `key ${keyName}`);
     keyWrapper.setAttribute('data-ripple', 'once');
 
-    const spanEng = createElement('span', 'eng');
+    const spanEng = createElement('span', 'eng lng');
     const engCaseDown = createElement('span', 'caseDown _active', `${eng.caseDown}`);
     const engCaseUp = createElement('span', 'caseUp _hidden', `${eng.caseUp}`);
     const engCaps = createElement('span', 'caps _hidden', `${eng.caps}`);

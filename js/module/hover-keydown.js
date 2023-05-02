@@ -2,20 +2,18 @@
  * Description placeholder
  * @date 01.05.2023 - 09:40:01
  *
- * @param {event} e
+ * @param {event} targetCode
  */
-const hoverKeydown = (e, event) => {
-  const targetCode = e.code;
-
+const hoverKeydown = (targetCode, event) => {
   document.querySelector('.app__out').focus();
 
   const kitKey = document.querySelectorAll('.key');
   kitKey.forEach((key) => {
     if (key.closest(`.${targetCode}`)) {
       if (event === 'keydown') {
-        key.classList.add('_on');
+        key.classList.add('_hover');
       } else {
-        key.classList.remove('_on');
+        key.classList.remove('_hover');
       }
     }
   });

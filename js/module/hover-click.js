@@ -7,9 +7,9 @@
  */
 const hoverClick = (targetItem, event) => {
   if (event === 'mousedown') {
-    targetItem.parentElement.parentElement.classList.add('_on');
+    targetItem.parentElement.parentElement.classList.add('_hover');
   } else {
-    targetItem.parentElement.parentElement.classList.remove('_on');
+    targetItem.parentElement.parentElement.classList.remove('_hover');
   }
 };
 
