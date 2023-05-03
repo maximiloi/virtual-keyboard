@@ -130,11 +130,11 @@ dist
 .pnp.*
 
 # Node
-package.json
-package-lock.json
+# package.json
+# package-lock.json
 
 # es-lint 
-.eslintrc.js
+# .eslintrc.js
 
 # git
-.gitignore
+# .gitignore
